@@ -12,4 +12,5 @@ button.addEventListener("click", function () {
 
   years.textContent = ageYears;
   months.textContent = ageMonths;
+  days.textContent = ageDays;
 });
