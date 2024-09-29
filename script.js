@@ -10,5 +10,5 @@ button.addEventListener("click", function () {
   let ageMonths = currentDate.getMonth() - inputValue.getMonth();
   let ageDays = currentDate.getDate() - inputValue.getDate();
 
-  
+  years.textContent = ageYears;
 });
