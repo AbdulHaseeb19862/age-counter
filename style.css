@@ -28,8 +28,8 @@ body{
 
 .container1 {
   background: black;
-  width: 500px;
-  height: 150px;
+  width: 700px;
+  height: 180px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -38,29 +38,31 @@ body{
 }
 
 .container1 .inputBox input{
-  width: 300px;
-  height: 40px;
+  width: 450px;
+  height: 65px;
   border-radius: 10px;
   padding: 10px;
   border:none;
+  font-size: 20px;
   
 }
 
 button{
-  width: 100px;
-  height: 40px;
+  width: 150px;
+  height: 65px;
   background-color: white;
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  font-size: 20px;
 }
 
 
 
 .container2{
   border: 1px solid black;
-  width: 500px;
-  height: 150px;
+  width: 700px;
+  height: 180px;
   border-radius: 10px;
   display: flex;
   justify-content: space-around;
@@ -76,7 +78,7 @@ button{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
 }
 .box h1{
   color: white;
