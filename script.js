@@ -4,20 +4,26 @@ button.addEventListener("click", function () {
   const months = document.getElementById("months");
   const days = document.getElementById("days");
   const input = document.querySelector("input");
-  const inputValue = new Date(input.value);
+  const birthDate = new Date(input.value);
   const currentDate = new Date();
-  let ageYears = currentDate.getFullYear() - inputValue.getFullYear();
+  if (birthDate > currentDate) {
+    return alert("Birth date cannot be set in the future");
+  } else {
+    let ageYears = currentDate.getFullYear() - birthDate.getFullYear();
 
-  let ageMonths = currentDate.getMonth() - inputValue.getMonth();
-  if (ageMonths < 0) {
-    ageMonths += 12;
-  }
-  let ageDays = currentDate.getDate() - inputValue.getDate();
-  if (ageDays < 0) {
-    ageDays += 30;
-  }
+    let ageMonths = currentDate.getMonth() - birthDate.getMonth();
+    if (ageMonths < 0) {
+      ageMonths += 12;
+    }
+    let ageDays = currentDate.getDate() - birthDate.getDate();
+    if (ageDays < 0) {
+      ageDays += 30;
+    }
 
-  years.textContent = ageYears;
-  months.textContent = ageMonths;
-  days.textContent = ageDays;
+    years.textContent = ageYears;
+    months.textContent = ageMonths;
+    days.textContent = ageDays;
+  }
 });
+
+
