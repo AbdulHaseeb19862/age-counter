@@ -4,6 +4,9 @@ button.addEventListener("click", function () {
   const months = document.getElementById("months");
   const days = document.getElementById("days");
   const input = document.querySelector("input");
+  if (!input.value.trim("")) {
+    return alert("Please select your birth date");
+  }
   const birthDate = new Date(input.value);
   const currentDate = new Date();
   if (birthDate > currentDate) {
@@ -25,5 +28,3 @@ button.addEventListener("click", function () {
     days.textContent = ageDays;
   }
 });
-
-
