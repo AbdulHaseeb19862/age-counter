@@ -10,7 +10,6 @@ button.addEventListener("click", function () {
 
   let ageMonths = currentDate.getMonth() - inputValue.getMonth();
   if (ageMonths < 0) {
-    ageMonths--;
     ageMonths += 12;
   }
   let ageDays = currentDate.getDate() - inputValue.getDate();
